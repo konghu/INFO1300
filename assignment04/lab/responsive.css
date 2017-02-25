@@ -1,0 +1,121 @@
+/******************
+ * DEFAULT STYLES *
+ ******************/
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    background-color: red;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+    color: white;
+    display: inline;
+    font-weight: bold;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.content {
+    padding: 15px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.item img {
+    float: left;
+    margin: 0 10px;
+    width: 100px;
+}
+
+.item {
+    height: 80px;
+    margin-top: 40px;
+}
+
+.item:last-of-type {
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+    .column {
+        float: none;
+        width: 100%
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .banner {
+        display: none;
+    }
+
+    .column {
+        float: none;
+        width: 100%
+    }
+
+    .item {
+        border-bottom: 3px solid lightgrey;
+        height: inherit
+    }
+
+    #container{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    ul {
+        background-color: white;
+    }
+
+    li {
+        border-bottom: 1px solid red;
+        colar: red;
+        display: block;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .nav {
+        position: static
+    }
+}

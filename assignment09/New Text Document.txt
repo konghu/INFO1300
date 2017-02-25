@@ -1,0 +1,11 @@
+$file = fopen("data/archery_terms.csv","r");
+while(!feof($file)) {
+  $content = fgetcsv($file);
+  $count = count($content);
+  for ($i = 0; $i < $count; $i++) {
+    echo $content[$i] . "\t";
+  }
+  echo "<br/>";
+}
+fclose($file);
+
